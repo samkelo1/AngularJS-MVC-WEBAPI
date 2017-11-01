@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+h3>
+{{ title }}</h3>
+<hr />
+<form role="form" style="max-width: 500px;">
+    <strong class="error">{{ error }}</strong>
+    <div class="form-group">
+        <label for="isbn">
+            ISBN :
+        </label>
+        <input type="text" class="form-control" id="isbn" ng-model="isbn" />
+    </div>
+    <div class="form-group">
+        <label for="title">
+            Title:
+        </label>
+        <input type="text" class="form-control" id="title" ng-model="title" />
+    </div>
+<div class="form-group">
+    <label for="sub">
+        Subtitle:
+    </label>
+    <input type="text" class="form-control" id="Subtitle" ng-model="Subtitle" />
+</div>
+    <div class="form-group">
+        <label for="contr">
+            Contribution:
+        </label>
+        <input type="text" class="form-control" id="contr" ng-model="contr" />
+    </div>
+    
+    <div class="form-group">
+        <label for="desc">
+            Description:
+        </label>
+        <input type="text" class="form-control" id="desc" ng-model="desc" />
+    </div>
+<div class="form-group">
+    <label for="description">
+        Contributors:
+    </label>
+    <input type="text" class="form-control" id="contributors" ng-model="contributors"/>
+</div>
+    <div class="form-group">
+        <label for="language">
+            Language:
+        </label>
+        <<input type="text" class="form-control" id="language" ng-model="language"/>
+    </div>
+    <div class="form-group">
+        <label for="PublicationDate">
+            Publication Date:
+        </label>
+        <input type="date" class="form-control" id="PublicationDate" ng-model="PublicationDate" />
+    </div>
+   
+    
+    <a href="#/list" class="btn btn-info">Back to List</a>
+    <button type="submit" class="btn btn-default" ng-click="save()">
+        Submit
+    </button>
+</form>  

@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>
+    Are you want to sure to delete this record?
+</h3>
+<hr />
+<form class="form-horizontal" style="max-width: 500px;">
+    <div class="form-group">
+        <label class="control-label col-xs-3">
+            ISBN :
+        </label>
+        <div class="col-xs-9">
+            <p class="form-control-static">
+                {{ ISBN }}
+            </p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">
+            Title :
+        </label>
+        <div class="col-xs-9">
+            <p class="form-control-static">
+                {{ Title }}
+            </p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">
+            Subtitle :
+        </label>
+        <div class="col-xs-9">
+            <p class="form-control-static">
+                {{ Subtitle }}
+            </p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">
+            Description :
+        </label>
+        <div class="col-xs-9">
+            <p class="form-control-static">
+                {{ Description }}
+            </p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">
+            Contributors :
+        </label>
+        <div class="col-xs-9">
+            <p class="form-control-static">
+                {{ Contributors }}
+            </p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">
+            Language :
+        </label>
+        <div class="col-xs-9">
+            <p class="form-control-static">
+                {{ Language }}
+            </p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3">
+            Publication Date:
+        </label>
+        <div class="col-xs-9">
+            <p class="form-control-static">
+                {{ PublicationDate }}
+            </p>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9 text-center">
+            <a href="#/list" class="btn btn-info">Back to List</a>
+            <button type="submit" class="btn btn-primary" ng-click="delete()">
+                Delete
+            </button>
+        </div>
+    </div>
+</form>  
